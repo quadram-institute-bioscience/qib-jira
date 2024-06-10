@@ -33,7 +33,7 @@ options:
                         Provide a health check URL to perform a health check when you run this script as a scheduled job (Optional) (default: None)
 ```
 
-Several parameters can be defined using a `.env` at the same location of the script `qib-jira.py`, like below:
+Several parameters can be also defined in a `.env` at the same location of the script `qib-jira.py`, like below:
 
 ```
 JIRA_TOKEN="replace-me"
