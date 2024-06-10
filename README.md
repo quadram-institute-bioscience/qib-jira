@@ -30,7 +30,7 @@ options:
   --days DAYS           Number of days to query (default: 30)
   --schedule SCHEDULE   Run this script as a cron job every X minutes (default: None)
   --health-check HEALTH_CHECK
-                        Provide a health check URL to perform a health check if you run this script as a scheduled job (default: None)
+                        Provide a health check URL to perform a health check when you run this script as a scheduled job (Optional) (default: None)
 ```
 
 Several parameters can be defined using a `.env` at the same location of the script `qib-jira.py`, like below:

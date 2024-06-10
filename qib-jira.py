@@ -323,7 +323,7 @@ def main():
         "--health-check",
         type=str,
         default=None,
-        help="Provide a health check URL to perform a health check if you run this script as a scheduled job",
+        help="Provide a health check URL to perform a health check when you run this script as a scheduled job (Optional)",
     )
 
     # Parse the command line arguments
