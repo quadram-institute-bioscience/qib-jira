@@ -50,7 +50,7 @@ If the https://healthchecks.io/ URL is provided, the script will ping the servic
 - Download all records within last 365 days
 
 ```
-poetry run python qib-jira.py --database ./qib-jira.db --email thanh.le-viet@quadram.ac.uk --token my-token --days 365
+poetry run python qib-jira.py --database ./qib-jira.db --email thanh.le-viet[at]quadram[dot]ac[dot]uk --token my-token --days 365
 ```
 
 If email, token were defined in `.env`, the command would be
@@ -63,5 +63,5 @@ poetry run python qib-jira.py --database ./qib-jira.db --days 365
 - Download records within (default) last 30 days every 30 minutes
 
 ```
-poetry run python qib-jira.py --database ./qib-jira.db --email thanh.le-viet@quadram.ac.uk --token my-token --schedule 30
+poetry run python qib-jira.py --database ./qib-jira.db --email thanh.le-viet[at]quadram[dot]ac[dot]uk --token my-token --schedule 30
 ```
