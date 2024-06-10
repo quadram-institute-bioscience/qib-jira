@@ -8,7 +8,7 @@ curl -sSL https://install.python-poetry.org | python3 -
 ```
 
 ```
-git clone [this-repository]
+git clone https://github.com/quadram-institute-bioscience/qib-jira
 cd qib-jira
 poetry run python qib-jira.py --help
 ```
