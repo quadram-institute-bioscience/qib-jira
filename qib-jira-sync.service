@@ -1,0 +1,22 @@
+[Unit]
+Description=File Sync Service
+Documentation=File synchronization service
+Wants=file-sync.timer
+
+[Service]
+Type=oneshot
+User=ifrgalaxy
+Group=ifrgalaxy
+ExecStart=/data/software/qib-jira/qib-jira-sync.sh
+StandardOutput=journal
+StandardError=journal
+
+# Security settings (optional but recommended)
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/qib/research-groups/CoreBioInfo/tickets/qib-jira.db /var/log
+
+[Install]
+WantedBy=multi-user.target

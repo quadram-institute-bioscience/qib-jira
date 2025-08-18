@@ -1,0 +1,15 @@
+[Unit]
+Description=Run qib-jira.py script with schedule 30
+After=network.target
+
+[Service]
+User=ifrgalxy
+WorkingDirectory=/path/to/your/script
+ExecStart=/data/software/qib-jira/.venv/bin/python /data/software/qib-jira/qib-jira.py --schedule 30
+Restart=always
+Environment="http_proxy=http://swproxy.nbi.ac.uk:8080"
+Environment="https_proxy=http://swproxy.nbi.ac.uk:8080"
+WorkingDirectory=/data/software/qib-jira
+[Install]
+WantedBy=multi-user.target
+

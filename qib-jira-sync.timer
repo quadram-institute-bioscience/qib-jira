@@ -1,0 +1,17 @@
+[Unit]
+Description=File Sync Timer
+Documentation=Runs file sync every hour
+Requires=qib-jira-sync.service
+
+[Timer]
+# Run every hour
+OnCalendar=hourly
+# Run 2 minutes after boot if missed
+OnBootSec=2min
+# Ensure timer persists across reboots
+Persistent=true
+# Add randomized delay (0-300 seconds) to prevent system load spikes
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target
